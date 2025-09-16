@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+}
+/* ==== HEADER / NAV ===================================== */
+header {
+    width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #1e40af;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+header .container.nav {
+  max-width: 1200px;
+  margin: 0 auto; 
+  align-items: center; 
+ }
+
+.nav{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    background-color: #333;
+    justify-content: space-between;
+}
+
+.nav  a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu a{
+    margin-right: 10px;
+}
+
+.brand{
+    font-size: 28px;
+}
+.menuHamburguer{
+    width: 25px;
+    height: 25px;
+}
+
+.menuHamburguer > div{
+    display: none;
+    width: 100%;
+    height: 5px;
+    margin: 2px 0;
+    background-color: #FFF;
+
+}
+/* Tablet e Desktop */
+@media (max-width: 641px) {
+    .menuHamburguer > div{
+    display: block;
+    }
+    .menu > .fullSizeScreen{
+        display: none;
+    } 
+  header .menu { display: flex; }  /* mostra o menu */
+  header .hamb { display: none; }  /* esconde o hambúrguer */
+  header .mobile { display: none !important; } /* garante fechado */
+}
