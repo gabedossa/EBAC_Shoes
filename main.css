@@ -48,6 +48,9 @@
             margin-left: 20px;
             transition: color 0.3s;
         }
+        #menuToggle{
+            display: none;
+        }
         
         .nav-links a:hover {
             color: #e0e0e0;
@@ -268,6 +271,10 @@
                 width: 100%;
                 text-align: center;
                 margin-top: 15px;
+            }
+
+            #menuToggle{
+                display: block;
             }
             
             .nav-links.active {
